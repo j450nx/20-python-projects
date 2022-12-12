@@ -1,1 +1,1 @@
-# 20-python-projects
+Tutorial from https://github.com/tomitokko/20-python-projects
