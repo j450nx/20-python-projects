@@ -2,3 +2,4 @@ app_password.py
 .idea/
 __pycache__/
 qrcode.png
+src/

@@ -2,6 +2,9 @@
 # collect input from the user, input is a word
 # check if the word is in the dictionary, then print the definition
 
+# alternative: pip install -e git+https://github.com/yeahwhat-mc/goslate#egg=goslate
+# pip install PyDictionary
+from PyDictionary import PyDictionary
 def main():
     word_dictionary = {
         'hi': 'a way of greeting',
@@ -17,4 +20,12 @@ def main():
         if word in word_dictionary:
             print(word, ':', word_dictionary[word])
 
-main()
+# main()
+
+dictionary = PyDictionary()
+
+while True:
+    word = input('Enter your word: ')
+    if word == '':
+        break
+    print(dictionary.meaning(word))
