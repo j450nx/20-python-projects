@@ -7,7 +7,7 @@ import urllib.request as urllib
 def connection_checker(url):
     print('Checking connectivity')
     response = urllib.urlopen(url)
-    print(f'Connected to {url} successfully')
+    print(f'Connected to ${url} successfully')
     print('The response code is', response.getcode())
 
 print('This is a site connectivity checker program')
